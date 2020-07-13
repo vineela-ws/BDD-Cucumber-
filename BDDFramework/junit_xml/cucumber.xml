@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="52.757277">
-<testcase classname="Free CRM Create Contacts" name="Free CRM Create a new contact scenario" time="30.765906">
-<system-out><![CDATA[Given User is already in loginpage..........................................passed
-When title of login page is FreeCrm.........................................passed
-Then user enters "batchautomation" and "Test@12345".........................passed
-And user clicks on login button.............................................passed
-Then user is on home Page...................................................passed
-Then user moves to new contact page.........................................passed
-Then user enters contact details "Tom" and "Peter" and "Manager"............passed
-Then close the browser......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM Create Contacts" name="Free CRM Create a new contact scenario 2" time="21.991371">
-<failure message="junit.framework.ComparisonFailure: expected:&lt;CRMPRO[ - CRM software for customer relationship management, sales, and support.]&gt; but was:&lt;CRMPRO[]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at stepDefination.LoginStepDefination.user_is_on_home_Page(LoginStepDefination.java:45)&#13;&#10;&#9;at ✽.Then user is on home Page(C:/Users/Vennela/git/BDD-Cucumber-/BDDFramework/src/main/java/features/contacts.feature:9)&#13;&#10;"><![CDATA[Given User is already in loginpage..........................................passed
-When title of login page is FreeCrm.........................................passed
-Then user enters "vineela" and "test@123"...................................passed
-And user clicks on login button.............................................passed
-Then user is on home Page...................................................failed
-Then user moves to new contact page.........................................skipped
-Then user enters contact details "David" and "Dsouza" and "Director"........skipped
-Then close the browser......................................................skipped
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="36.80246">
+<testcase classname="Flight Selection" name="Flight Selection scenario" time="36.80246">
+<failure message="org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter departure airport!!}&#10;  (Session info: chrome=83.0.4103.116): Please enter departure airport!!&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'VENNELA-PC', ip: '192.168.43.210', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Vennela\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54552}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: d048417127f8c380741b8877347d2a59&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)&#13;&#10;&#9;at stepDefination.FlightSelection.close_the_browser(FlightSelection.java:52)&#13;&#10;&#9;at ✽.Then close the browser(C:/Users/Vennela/git/BDD-Cucumber-/BDDFramework/src/main/java/features/flightSelection.feature:8)&#13;&#10;"><![CDATA[Given User is already in flights page.......................................passed
+When title of login page is Make mytrip.....................................passed
+Then user enters "h" and "b"................................................passed
+And user clicks on search button............................................passed
+Then close the browser......................................................failed
 
 StackTrace:
-junit.framework.ComparisonFailure: expected:<CRMPRO[ - CRM software for customer relationship management, sales, and support.]> but was:<CRMPRO[]>
-	at junit.framework.Assert.assertEquals(Assert.java:100)
-	at junit.framework.Assert.assertEquals(Assert.java:107)
-	at stepDefination.LoginStepDefination.user_is_on_home_Page(LoginStepDefination.java:45)
-	at ✽.Then user is on home Page(C:/Users/Vennela/git/BDD-Cucumber-/BDDFramework/src/main/java/features/contacts.feature:9)
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter departure airport!!}
+  (Session info: chrome=83.0.4103.116): Please enter departure airport!!
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VENNELA-PC', ip: '192.168.43.210', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Vennela\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54552}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d048417127f8c380741b8877347d2a59
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at stepDefination.FlightSelection.close_the_browser(FlightSelection.java:52)
+	at ✽.Then close the browser(C:/Users/Vennela/git/BDD-Cucumber-/BDDFramework/src/main/java/features/flightSelection.feature:8)
 ]]></failure>
 </testcase>
 </testsuite>

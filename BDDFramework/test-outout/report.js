@@ -1,122 +1,90 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Vennela/git/BDD-Cucumber-/BDDFramework/src/main/java/features/contacts.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Vennela/git/BDD-Cucumber-/BDDFramework/src/main/java/features/flightSelection.feature");
 formatter.feature({
   "line": 1,
-  "name": "Free CRM Create Contacts",
+  "name": "Flight Selection",
   "description": "",
-  "id": "free-crm-create-contacts",
+  "id": "flight-selection",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "line": 3,
-  "name": "Free CRM Create a new contact scenario",
+  "line": 2,
+  "name": "Flight Selection scenario",
   "description": "",
-  "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario",
+  "id": "flight-selection;flight-selection-scenario",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 5,
-  "name": "User is already in loginpage",
+  "line": 4,
+  "name": "User is already in flights page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
-  "name": "title of login page is FreeCrm",
+  "line": 5,
+  "name": "title of login page is Make mytrip",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
-  "name": "user enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+  "line": 6,
+  "name": "user enters \"\u003csource\u003e\" and \"\u003cDestination\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
-  "name": "user clicks on login button",
+  "line": 7,
+  "name": "user clicks on search button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
-  "name": "user is on home Page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "user moves to new contact page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user enters contact details \"\u003cfirstname\u003e\" and \"\u003clastname\u003e\" and \"\u003cposition\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
+  "line": 8,
   "name": "close the browser",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 14,
+  "line": 10,
   "name": "",
   "description": "",
-  "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario;",
+  "id": "flight-selection;flight-selection-scenario;",
   "rows": [
     {
       "cells": [
-        "username",
-        "password",
-        "firstname",
-        "lastname",
-        "position"
+        "source",
+        "Destination"
       ],
-      "line": 15,
-      "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario;;1"
+      "line": 11,
+      "id": "flight-selection;flight-selection-scenario;;1"
     },
     {
       "cells": [
-        "batchautomation",
-        "Test@12345",
-        "Tom",
-        "Peter",
-        "Manager"
+        "h",
+        "b"
       ],
-      "line": 16,
-      "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario;;2"
-    },
-    {
-      "cells": [
-        "vineela",
-        "test@123",
-        "David",
-        "Dsouza",
-        "Director"
-      ],
-      "line": 17,
-      "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario;;3"
+      "line": 12,
+      "id": "flight-selection;flight-selection-scenario;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 16,
-  "name": "Free CRM Create a new contact scenario",
+  "line": 12,
+  "name": "Flight Selection scenario",
   "description": "",
-  "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario;;2",
+  "id": "flight-selection;flight-selection-scenario;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 5,
-  "name": "User is already in loginpage",
+  "line": 4,
+  "name": "User is already in flights page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
-  "name": "title of login page is FreeCrm",
+  "line": 5,
+  "name": "title of login page is Make mytrip",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
-  "name": "user enters \"batchautomation\" and \"Test@12345\"",
+  "line": 6,
+  "name": "user enters \"h\" and \"b\"",
   "matchedColumns": [
     0,
     1
@@ -124,248 +92,59 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
-  "name": "user clicks on login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
-  "name": "user is on home Page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "user moves to new contact page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user enters contact details \"Tom\" and \"Peter\" and \"Manager\"",
-  "matchedColumns": [
-    2,
-    3,
-    4
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "close the browser",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStepDefination.user_is_already_in_loginpage()"
-});
-formatter.result({
-  "duration": 15130175235,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefination.title_of_login_page_is_FreeCrm()"
-});
-formatter.result({
-  "duration": 22902194,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "batchautomation",
-      "offset": 13
-    },
-    {
-      "val": "Test@12345",
-      "offset": 35
-    }
-  ],
-  "location": "LoginStepDefination.user_enters_username_and_password(String,String)"
-});
-formatter.result({
-  "duration": 368733592,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefination.user_clicks_on_login_button()"
-});
-formatter.result({
-  "duration": 8644339408,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefination.user_is_on_home_Page()"
-});
-formatter.result({
-  "duration": 20635040,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefination.user_moves_to_new_contact_page()"
-});
-formatter.result({
-  "duration": 2362841262,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Tom",
-      "offset": 29
-    },
-    {
-      "val": "Peter",
-      "offset": 39
-    },
-    {
-      "val": "Manager",
-      "offset": 51
-    }
-  ],
-  "location": "LoginStepDefination.user_enters_contacts_details(String,String,String)"
-});
-formatter.result({
-  "duration": 3554234504,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefination.close_the_browser()"
-});
-formatter.result({
-  "duration": 662044490,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 17,
-  "name": "Free CRM Create a new contact scenario",
-  "description": "",
-  "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 5,
-  "name": "User is already in loginpage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 6,
-  "name": "title of login page is FreeCrm",
-  "keyword": "When "
-});
-formatter.step({
   "line": 7,
-  "name": "user enters \"vineela\" and \"test@123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "user clicks on login button",
+  "name": "user clicks on search button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
-  "name": "user is on home Page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "user moves to new contact page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user enters contact details \"David\" and \"Dsouza\" and \"Director\"",
-  "matchedColumns": [
-    2,
-    3,
-    4
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
+  "line": 8,
   "name": "close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefination.user_is_already_in_loginpage()"
+  "location": "FlightSelection.user_is_already_in_flights_page()"
 });
 formatter.result({
-  "duration": 13530685170,
+  "duration": 23589797650,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefination.title_of_login_page_is_FreeCrm()"
+  "location": "FlightSelection.title_of_login_page_is_Make_mytrip()"
 });
 formatter.result({
-  "duration": 30973628,
+  "duration": 15558548,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "vineela",
+      "val": "h",
       "offset": 13
     },
     {
-      "val": "test@123",
-      "offset": 27
+      "val": "b",
+      "offset": 21
     }
   ],
-  "location": "LoginStepDefination.user_enters_username_and_password(String,String)"
+  "location": "FlightSelection.user_enters_and(String,String)"
 });
 formatter.result({
-  "duration": 296114994,
+  "duration": 13033753763,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefination.user_clicks_on_login_button()"
+  "location": "FlightSelection.user_clicks_on_search_button()"
 });
 formatter.result({
-  "duration": 8054057324,
+  "duration": 104430043,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefination.user_is_on_home_Page()"
+  "location": "FlightSelection.close_the_browser()"
 });
 formatter.result({
-  "duration": 79539979,
-  "error_message": "junit.framework.ComparisonFailure: expected:\u003cCRMPRO[ - CRM software for customer relationship management, sales, and support.]\u003e but was:\u003cCRMPRO[]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepDefination.LoginStepDefination.user_is_on_home_Page(LoginStepDefination.java:45)\r\n\tat ✽.Then user is on home Page(C:/Users/Vennela/git/BDD-Cucumber-/BDDFramework/src/main/java/features/contacts.feature:9)\r\n",
+  "duration": 58919588,
+  "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter departure airport!!}\n  (Session info: chrome\u003d83.0.4103.116): Please enter departure airport!!\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027VENNELA-PC\u0027, ip: \u0027192.168.43.210\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\Vennela\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54552}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: d048417127f8c380741b8877347d2a59\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)\r\n\tat stepDefination.FlightSelection.close_the_browser(FlightSelection.java:52)\r\n\tat ✽.Then close the browser(C:/Users/Vennela/git/BDD-Cucumber-/BDDFramework/src/main/java/features/flightSelection.feature:8)\r\n",
   "status": "failed"
-});
-formatter.match({
-  "location": "LoginStepDefination.user_moves_to_new_contact_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "David",
-      "offset": 29
-    },
-    {
-      "val": "Dsouza",
-      "offset": 41
-    },
-    {
-      "val": "Director",
-      "offset": 54
-    }
-  ],
-  "location": "LoginStepDefination.user_enters_contacts_details(String,String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStepDefination.close_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
 });
 });
